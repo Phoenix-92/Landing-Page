@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="startup">
+                    Startup 3
+                </div>
+                <div class="navbar-content">
+                    <div><a href="#" class="nav-link" id="overview">Overview</a></div>
+                    <div><a href="#" class="nav-link" id="prices">Prices</a></div>
+                    <div><a href="#" class="nav-link" id="blog">Blog</a></div>
+                    <div><a href="#" class="nav-link" id="feedback">Feedback</a></div>
+                    <div><a href="#" class="nav-link nav-link-click" id="purchase">Purchase</a></div>
+                </div>     
+            </div>
+            <script>
+                var overviewLink = document.getElementById("overview");
+                var pricesLink = document.getElementById("prices");
+                var blogLink = document.getElementById("blog");
+                var feedbackLink = document.getElementById("feedback");
+                var purchaseLink = document.getElementById("purchase");
+
+                function removeClickClass() {
+                    // Remove the "nav-link-click" class from all links
+                    overviewLink.classList.remove("nav-link-click");
+                    pricesLink.classList.remove("nav-link-click");
+                    blogLink.classList.remove("nav-link-click");
+                    feedbackLink.classList.remove("nav-link-click");
+                    purchaseLink.classList.remove("nav-link-click");
+                }
+
+                overviewLink.addEventListener("click", function() {
+                    removeClickClass();
+                    overviewLink.classList.toggle("nav-link-click");
+                });
+
+                pricesLink.addEventListener("click", function() {
+                    removeClickClass();
+                    pricesLink.classList.toggle("nav-link-click");
+                });
+
+                blogLink.addEventListener("click", function() {
+                    removeClickClass();
+                    blogLink.classList.toggle("nav-link-click");
+                });
+
+                feedbackLink.addEventListener("click", function() {
+                    removeClickClass();
+                    feedbackLink.classList.toggle("nav-link-click");
+                });
+
+                purchaseLink.addEventListener("click", function() {
+                    removeClickClass();
+                    purchaseLink.classList.toggle("nav-link-click");
+                });
+            </script>
+            <div class="body-content">
+                <div class="text">
+                <div class="text-header">Generate 
+                Awesome Web 
+                Pages</div>
+                <p class="text-body">
+                    The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use
+                    as is or you can add new blocks.
+                </p>
+                <button class="more-btn">Learn More</button>
+                </div>
+                <div class="sign-up-form">
+                    <h1>Sign Up Now</h1>
+                    <form>
+                        <input type="email" class="input-box" placeholder="Your email">
+                        <input type="password" class="input-box" placeholder="Your password">
+                        <p class="terms"><span><input type="checkbox"></span> I agree to the Terms of Service.</p>
+                        <button type="button" class="signup-btn">Sign Up</button>
+                        <hr>
+                        <p class="or">or</p>
+                        <button type="button" class="twitter-btn">Login via Twitter</button>
+                        <p class="account">Do you have an account?<a href="#" class="a-signin"> Sign in</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+:root{
+    --background-dark: rgba(47, 24, 147, 1);
+    --colors-white: rgba(255, 255, 255, 1);
+    --colors-grey: rgba(235, 234, 237, 1);
+    --colors-black: rgb(0, 0, 0);
+}
+
+.header {
+    background-color: var(--background-dark);
+    display: flex;
+}
+
+.header .container {
+    font-family: "DMSans", Helvetica;
+    margin: 6% 16%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.startup {
+    color: var(--colors-white);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--colors-white);
+}
+
+.nav-link:hover{
+    opacity: 0.3;
+}
+
+.navbar-content > div {
+    margin-left: 33px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.nav-link-click {
+    border: 12px solid #E93A7D;
+    border-radius: 100px;
+    background: #E93A7D;
+}
+
+.body-content {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 50%;
+    margin-top: 37px;
+}
+
+.text-header {
+    font-weight: 700;
+    color: var(--colors-white);
+    font-size: 58px;
+    letter-spacing: -1px;
+    line-height: 70px;
+}
+
+.text-body {
+    position: relative;
+    width: 363px;
+    left: 3px;
+    margin-top: 24px;
+    margin-bottom: 45px;
+    color: var(--colors-white);
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.more-btn {
+    width: 157px;
+    background: #E93A7D;
+    font-size: 20px;
+}
+
+.sign-up-form {
+    width: 45%;
+    height: 564px;
+    border-radius: 20px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sign-up-form h1 {
+    color: var(--background-dark);
+    margin-bottom: 30px;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+}
+
+.input-box{
+    border-radius: 100px;
+    margin: 10px 0;
+    width: 75%;
+    height: 50px;
+    border: 1px solid #999;
+    outline: none;
+    font-size: 18px;
+    color: var(--colors-black);
+    padding-left: 20px;
+}
+
+.input-box::placeholder {
+    color: #15143966;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.terms {
+    color: rgba(21, 20, 57, 0.40);
+    line-height: 26px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.terms input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 30%; 
+    border: none;
+    background-color: #1DA1F2;
+}
+
+button{
+    color: #fff;
+    width: 80%;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.signup-btn{
+    margin-top: 1.6px;
+    margin-bottom: 10px;
+    background-color: #482BE7;
+}
+
+.twitter-btn{
+    margin-top: 10px;
+    background-color: #1DA1F2;
+}
+
+.a-signin{
+    color: #25DAC5;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+}
+
+hr{
+    margin-top: 20px;
+    width: 80%;
+    height: 2px;
+    border: none;
+    background-color: #EBEAED;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -22px auto 10px;
+    color: rgba(21, 20, 57, 0.40);
+    line-height: 26px;
+}
+
+.account{
+    color: rgba(21, 20, 57, 0.40);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    margin-top: 30px;
+}
+
+@media (max-width: 1000px) {
+.navbar {
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar > div {
+    margin: 10px 0;
+}
+} 
+
+@media (max-width: 1094px) {
+    .body-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .text, .sign-up-form {
+        width: 100%; 
+        margin-bottom: 30px;
+    }
+}
+
+
